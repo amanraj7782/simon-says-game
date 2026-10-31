@@ -1,0 +1,126 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game | By Aman Raj</title>
+    
+    <!-- Search Engine Description & Keywords -->
+    <meta name="description" content="Play the classic 3D Simon Says memory game online by Aman Raj.">
+    <meta name="keywords" content="Simon Says, Memory Game, Aman Raj, JavaScript Game">
+    <meta name="author" content="Aman Raj">
+
+    <!-- Instant Emoji Favicon (No extra image file needed) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    
+    <!-- OR if you download an image named icon.png into your project folder, use this instead: -->
+    <!-- <link rel="icon" type="image/png" href="icon.png"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Start & Instructions Screen -->
+    <div id="start-screen" class="overlay-screen">
+        <div class="card">
+            <h1>SIMON SAYS</h1>
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Watch the color pad flash and listen to its tone.</li>
+                    <li>Repeat the exact sequence by clicking the pads in order.</li>
+                    <li>Each round adds a new color to the end of the sequence.</li>
+                    <li>One wrong click ends the game—beat your high score!</li>
+                    <li>Click the center <b>"Simon"</b> button to start the round.</li>
+                </ul>
+            </div>
+            <div class="input-group">
+                <input type="text" id="player-name-input" placeholder="Enter your name..." maxlength="20" autocomplete="off">
+            </div>
+            <button id="enter-game-btn" class="primary-btn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- 2. Quit / Thank You Screen -->
+    <div id="quit-screen" class="overlay-screen hidden">
+        <div class="card">
+            <h1>Thank You for Playing!</h1>
+            <p class="quit-msg">Thank you from <b>Aman Raj</b> for playing the game!</p>
+            <p class="final-stats" id="quit-stats"></p>
+            <a href="https://www.linkedin.com/in/aman-raj-196469226/" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
+                Follow Aman Raj on LinkedIn
+            </a>
+            <br>
+            <button id="play-again-btn" class="secondary-btn">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- 3. Main Game Interface -->
+    <div id="game-interface" class="hidden">
+        <header>
+            <div class="top-bar">
+                <span class="player-badge">Player: <b id="display-name">Guest</b></span>
+                <button id="quit-btn" class="danger-btn">Quit Game</button>
+            </div>
+            <h1>SIMON SAYS</h1>
+            <h2 id="status-text">Tap "Simon" in the center to begin!</h2>
+            <div class="score-board">
+                <span id="current-score">Level: 0</span>
+                <span id="high-score">Highest Score: 0</span>
+            </div>
+        </header>
+
+        <main class="game-wrapper">
+            <div class="simon-board">
+                <div class="btn red" type="button" id="red"></div>
+                <div class="btn green" type="button" id="green"></div>
+                <div class="btn purple" type="button" id="purple"></div>
+                <div class="btn yellow" type="button" id="yellow"></div>
+                
+                <!-- Center Hub -->
+                <div class="center-hub" id="start-btn">
+                    <span>Simon</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Meet the Developer: <a href="https://www.linkedin.com/in/aman-raj-196469226/" target="_blank" rel="noopener noreferrer">Aman Raj (LinkedIn)</a></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link  rel="stylesheet"href="style.css" >
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the Game</h2>
+    <div class="btn-container">
+        <div class="line-one">
+              <div class="btn yellow"type="button" id="yellow"> 1 </div>  
+              <div class="btn red"type="button" id="red"> 2 </div> 
+        </div>
+        <div class="line-two">
+             <div class="btn purple"type="button"id="purple"> 3 </div> 
+             <div class="btn green"type="button"id="green"> 4 </div> 
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+-->
