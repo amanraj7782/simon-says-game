@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 Simon Says — 3D Arcade Memory Game
 
 An interactive, retro-inspired **Simon Says** memory game built with vanilla **HTML5, CSS3, and JavaScript**. Designed with a 3D arcade console aesthetic, real-time synthesized sound effects, player personalization, and persistent high-score tracking.
@@ -57,3 +58,7 @@ simon-says-game/
 ├── app.js            # Game sequence logic, Web Audio synth, and score tracking
 ├── screenshots/      # Game preview images for README
 └── README.md         # Project documentation
+=======
+# simon-says-game
+a traditional children's party and movement game for three or more players where one person acts as the leader ("Simon") and issues physical commands
+>>>>>>> 042062d0aba70dcde34cc200992a979631efd15f
